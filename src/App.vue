@@ -208,28 +208,4 @@ button:hover {
   border-radius: 50%;
   font-size: 80%;
 }
-
-.filters {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 0 1rem 1.5rem 1rem;
-}
-
-.list-move,
-.list-leave-active,
-.list-enter-active {
-  -webkit-transition: 500ms cubic-bezier(0.87, -0.41, 0.19, 1.44);
-  transition: 500ms cubic-bezier(0.87, -0.41, 0.19, 1.44);
-}
-
-.list-enter,
-.list-leave-active {
-  -webkit-transform: translate(100%, 0);
-          transform: translate(100%, 0);
-  opacity: 0;
-}
 </style>
