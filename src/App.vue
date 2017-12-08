@@ -132,14 +132,14 @@ button:hover {
   outline: none;
 }
 
-.todo-list {
+.city-list {
   width: 100%;
   padding: 0 1rem;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
-.todo-list__item {
+.city-list__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -156,19 +156,19 @@ button:hover {
   transition: 200ms;
   color: #4fc08d;
 }
-.todo-list__item:last-child {
+.city-list__item:last-child {
   margin-bottom: 0;
 }
-.todo-list__item.complete {
+.city-list__item.complete {
   color: lightgreen;
 }
-.todo-list__item.complete .todo-list__item-content:after {
+.city-list__item.complete .city-list__item-content:after {
   background: lightgreen;
 }
-.todo-list__item-content {
+.city-list__item-content {
   position: relative;
 }
-.todo-list__item-content:after {
+.city-list__item-content:after {
   content: "";
   position: absolute;
   top: 100%;
@@ -183,11 +183,11 @@ button:hover {
   -webkit-transform: scalex(0);
           transform: scalex(0);
 }
-.todo-list__item-content:hover:after, .todo-list__item-content:focus:after {
+.city-list__item-content:hover:after, .city-list__item-content:focus:after {
   -webkit-transform: scalex(1);
           transform: scalex(1);
 }
-.todo-list__item-remove {
+.city-list__item-remove {
   margin-left: .5em;
   background: none;
   border: 1px solid;

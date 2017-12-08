@@ -1,15 +1,15 @@
 <template>
-  <div class="todo-list">
+  <div class="city-list">
     <li
-      class="todo-list__item"
+      class="city-list__item"
       v-for="city in cities">
       <button
-        class="todo-list__item-content"
+        class="city-list__item-content"
         @click="redirect(city)">
         {{ city.name }}
       </button>
       <button
-        class="btn todo-list__item-remove"
+        class="btn city-list__item-remove"
         @click="remove(city)">
         <icon name="times"></icon>
       </button>

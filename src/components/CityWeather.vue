@@ -9,21 +9,21 @@
           </option>
         </select>
       </form>
-      <div class="todo-list" v-if="weatherData && weatherData.list && weatherData.list.length > 0">
+      <div class="city-list" v-if="weatherData && weatherData.list && weatherData.list.length > 0">
         <li
-          class="todo-list__item"
+          class="city-list__item"
           v-for="weather in weatherData.list">
           <button
-            class="todo-list__item-content">
+            class="city-list__item-content">
             {{ weather.main.temp }}&deg;C
           </button>
         </li>
       </div>
-      <div class="todo-list" v-else>
+      <div class="city-list" v-else>
         <li
-          class="todo-list__item">
+          class="city-list__item">
           <button
-            class="todo-list__item-content">
+            class="city-list__item-content">
             {{weatherData.message}}
           </button>
         </li>
