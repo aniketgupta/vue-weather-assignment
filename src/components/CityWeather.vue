@@ -8,8 +8,8 @@
             {{ city.name }}
           </option>
         </select>
-        <button class="btn form__submit-btn" @click="changeView('list')">List View</button>
-        <button class="btn form__submit-btn" @click="changeView('grid')">Grid View</button>
+        <button :class="[view === 'list' ? 'btn form__submit-btn active' : 'btn form__submit-btn']" @click="changeView('list')">List View</button>
+        <button :class="[view === 'grid' ? 'btn form__submit-btn active' : 'btn form__submit-btn']" @click="changeView('grid')">Grid View</button>
       </form>
       <div class="city-list" v-if="weatherData && weatherData.list && weatherData.list.length > 0">
         <li

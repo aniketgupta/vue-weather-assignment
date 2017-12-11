@@ -103,7 +103,7 @@ button:hover {
   -webkit-transition: 250ms ease-out;
   transition: 250ms ease-out;
 }
-.btn:hover, .btn:focus {
+.btn:hover, .btn:focus, .btn.active {
   color: #fff;
   background: #4fc08d;
 }
