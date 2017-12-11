@@ -8,10 +8,12 @@
             {{ city.name }}
           </option>
         </select>
+        <button class="btn form__submit-btn" @click="changeView('list')">List View</button>
+        <button class="btn form__submit-btn" @click="changeView('grid')">Grid View</button>
       </form>
       <div class="city-list" v-if="weatherData && weatherData.list && weatherData.list.length > 0">
         <li
-          class="city-list__item"
+          :class="[view === 'list' ? 'city-list__item list' : 'city-list__item grid']"
           v-for="weather in weatherData.list">
           <button
             class="city-list__item-content">
@@ -37,6 +39,9 @@
       getWeather(e) {
         this.$store.dispatch('getWeather', e.target.value);
       },
+      changeView(type) {
+        this.view = type;
+      },
     },
     computed: {
       cities() {
@@ -53,6 +58,7 @@
     data() {
       return {
         selected: this.name,
+        view: 'list',
       };
     },
   };

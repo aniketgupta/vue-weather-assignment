@@ -208,4 +208,18 @@ button:hover {
   border-radius: 50%;
   font-size: 80%;
 }
+.list {
+  width: 100%; 
+  border-bottom: 1px dotted #CCC; 
+  margin-bottom: 10px; 
+  padding-bottom: 10px;
+}
+.grid {
+  float: left; 
+  width: 20%; 
+  height: 50px; 
+  border-right: 1px dotted #CCC; 
+  border-bottom: 1px dotted #CCC; 
+  padding: 20px;
+}
 </style>
